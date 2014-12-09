@@ -1,0 +1,1299 @@
+/*! Advanced Web Design Starter CSS
+ *! Based on HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
+/* !!! place all of your custom styles here !!! */
+
+
+html {
+  box-sizing: border-box;
+}
+
+
+
+.wrap {
+    max-width: 1000px; 
+    padding: 0 20px;
+    margin: 0 auto;
+    
+} 
+
+/*  page header  */
+
+
+.page-header {
+    height: 70px;
+    margin: 0 auto;
+    background-color: #3a5695;
+    color: white;
+    padding-top: 15px;
+    margin-bottom: -16px;
+}
+
+.site-logo{
+    font-size: 2.2em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-style:oblique;
+    
+}
+
+/* header responsive */
+
+@media (min-width: 700px) {    
+  
+}
+    
+
+@media (max-width: 700px){
+    
+    .page-header{
+        height: 60px;
+    }
+    
+    .site-logo {
+        font-size:1.2em;
+        letter-spacing: 2px;
+        margin-left: 15px;
+        
+        
+    }
+}    
+    
+    
+    /*  main navigation  */
+
+
+
+.main-nav {
+    height: 50px;
+    margin: 0 auto;
+    background-color: #3a5695;
+
+}
+
+.nav-list li {
+    list-style: none;
+    text-align: center;
+    font-size: 1.4em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-left: 80px;
+    line-height: 2.5;
+}
+
+
+
+
+.nav-list li:first-child {
+  margin-left: -45px;
+}
+
+
+.nav-list a {
+    color:white;
+    color:white;
+    text-decoration: none;
+    transition: all 0.3s linear;
+    text-decoration: none;
+
+}
+
+.nav-list a:link,
+.nav-list a:visited {
+    color: white,
+    border: 2px solid white;
+    padding: 10px;
+    
+    
+}
+
+.nav-list a:hover,
+.nav-list a:active {
+    color:white; /* reverses link colors */
+    background: #4c76d5;
+    
+}
+ 
+    
+/* navigation responsive */
+    
+    
+@media (max-width: 700px){
+    
+    nav, p, li {
+        font-size: .7em;
+    } 
+    
+    .main-nav {
+        height: 150px;
+
+    }
+    
+    .nav-list {
+        height: 150px;
+        width: 300px;
+        padding-top: 5px;
+        margin: 0 auto;  
+        
+
+        
+    }
+
+    .nav-list li {
+        line-height:1.7;
+        display:block;
+        margin-left:0px;
+        text-align:left;
+        margin-bottom: 1px;
+        background-color: #3a5695;
+        
+        
+    }
+    .nav-list li:first-child {
+        margin-left:0px;
+    }
+
+    .nav-list a:link,
+        nav-list a:visited {
+        color: white,
+        padding: 4px;
+        font-weight: 300;
+        
+    }
+    
+    
+}    
+
+    
+
+/*  image gallery  */
+
+.flexslider {
+    width:100%;
+    border:0px;
+        
+
+}
+
+.flex-direction-nav a {
+    color: white;
+}
+
+.image-gallery {
+    width: 100%;
+}
+
+
+
+/* image gallery responsive */
+    
+    
+@media (max-width: 700px){
+    .flexslider {
+        width:100%;
+        border:0px;
+
+
+    }   
+    
+}
+
+
+
+
+
+
+
+/*  main content  */
+
+
+
+
+.page-description {
+    height: 400px;
+    color: #2c4d90;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+
+.page-description h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align:center;        
+    letter-spacing: 5px;
+    word-spacing: 9px;
+    padding-left: 150px;
+    padding-right: 150px;
+    line-height: 1.5;    
+    
+}
+
+.page-description h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align:center;        
+    letter-spacing: 2px;
+    padding-left: 130px;
+    padding-right: 130px;
+    margin-top: 10px;
+    color: gray;
+}
+
+
+
+/* page-description responsive */
+    
+    
+@media (max-width: 700px){
+    .page-description {
+        height: 100%;
+        margin-top: -55px;
+    }
+    
+    .page-description h3 {
+        font-size: 1.2em;
+        padding-right: 35px;
+        padding-left: 35px;
+        letter-spacing: 1px;
+        word-spacing: 0px;
+    } 
+
+    .page-description h4 {
+        font-size: .7em;
+        padding-right: 35px;
+        padding-left: 35px;
+        font-weight: 400;
+        
+    }
+
+
+}
+
+
+/*  back-to-top  */
+
+.back-to-top {
+    position: fixed; /* this is a fixed position even if scrolling down*/
+    height: 40px;
+    padding-right: 10px;
+    
+}
+
+.back-to-top a {
+    position: fixed; /* this is a fixed position even if scrolling down*/
+    background-color: black;
+    opacity: .5;
+    padding: 15px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 2em;
+    line-height: 1;
+}    
+
+.back-to-top a:link{
+    text-decoration: none;
+}   
+
+.back-to-top a:hover{
+    background-color: #2c4d90;
+        
+}
+
+/* back to top responsive */
+    
+    
+@media (max-width: 700px){
+   
+    .back-to-top {
+        position: fixed; /* this is a fixed position even if scrolling down*/
+        height: 40px;
+        padding-right: 10px;
+    
+    }
+
+    .back-to-top a {
+        position: fixed; /* this is a fixed position even if scrolling down*/
+        background-color: black;
+        opacity: .4;
+        padding: 10px;
+        padding-right: 10px;
+        padding-bottom: 0px;
+        color: white;
+        font-size: 2em;
+        line-height: 1;
+    }    
+
+}
+
+
+/*  map and locations  */
+
+
+
+.behind-map-locations {
+    height: 550px;
+    background-color: orange;
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+
+.map-wrap {
+    max-width: 1300px; 
+    padding-left: 100px;
+    margin: 0 auto;
+    
+}
+
+.map, .all-locations {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 2px;
+}
+
+
+.location-list-1,
+.location-list-2 {
+    float: left;
+    vertical-align: top;
+    margin-right: -3px;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size:1em;
+    line-height: 2.7;
+    padding-left:24px;
+    color: black;
+    
+}
+
+
+.location a {
+    color: black;
+    padding-left: 5px;
+    text-decoration: none;
+    font-stretch: condensed;
+    
+}
+.location a:hover {
+    color:white;
+    border-bottom: 1px solid white;
+}
+
+.location-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 2.9em;
+    margin-top: -10px;
+    padding-left: 30px;
+    margin-bottom: 0px;
+    color: white;
+    text-transform: uppercase;        
+    letter-spacing: 3px;
+        
+}
+
+
+
+
+
+.map {
+    width: 40%;
+}
+
+iframe {
+    width: 100%;
+     
+}
+
+/*   map & locations responsive     */
+
+
+@media (max-width: 700px){
+    
+    .behind-map-locations {
+        height: 100%;
+        background-color: orange;
+        padding-top: 50px;
+        padding-bottom: 0px;
+    }
+    
+    .map-wrap {
+        max-width: 700px; 
+        margin: 0 auto;
+    
+    }    
+    
+    .location-list-1,
+    .location-list-2 {
+        margin-left: -80px;
+        font-size:1.2em;
+        line-height: 2;
+        padding-left:0px;
+        color: black;
+    
+    }
+    
+    .location-list-2 {
+        margin-top: -20px;
+    }
+    
+
+    
+    .location-title {
+        font-size: 1.7em;
+        letter-spacing: 1px;
+        margin-left: -90px;
+        text-align: center;
+        padding-left: 0px;
+        margin-top: 10px;
+        margin-bottom: -10px;
+        
+    }
+    
+    .map {
+        width: 110%;
+        margin-left: 0px;
+    } 
+    
+    iframe {
+        width: 110%;
+        height: 350px;
+        margin-left: -80px;
+    }
+
+
+
+}
+
+
+/*   location specs     */
+
+
+.location-specs {
+    margin-top: -20px;
+    
+}
+
+.inner-wrap {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #EEEEEE;
+    padding-left: 30px;
+    padding-bottom: .5px;
+    padding-top: 0px;
+    padding-right: 0px;
+}
+
+
+.location-expanded-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 3.5em;
+    text-transform: uppercase;
+    color: #2c4d90;
+    margin-bottom: 5px;
+    letter-spacing: 9px;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+    margin-right: 0px;
+    line-height: 1.2;
+    padding-top: 20px;
+    padding-right: 10px;
+    
+}
+
+
+
+.location-expanded-photo {
+    margin-top: 25px;
+    margin-left:-40px;
+    
+}
+
+
+.location-description {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.25em;
+    line-height: 2;
+    letter-spacing: 2;
+    color: gray;
+    padding-left:40px;
+}
+
+.location-expanded-photo, .location-description {
+    display:inline-block;
+    vertical-align:top;
+    width: 40%;
+    margin-left: 25px;/* needed for inline-block */;
+    
+}
+
+
+
+.visit-info {
+    color: gray;
+    font-size: 1.4em;
+    letter-spacing: 2px;
+}
+
+
+
+.hidden-text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    color: gray;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+}
+
+
+.viceroys {
+    list-style: none;
+    font-size: 1em;
+    margin-top: -25px;
+    margin-left: 250px;
+}
+
+.read-more{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    opacity: 50%;
+    text-align:center;
+    color: #2c4d90;
+    
+}
+
+.read-more a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-align: center;
+}
+
+.inner-wrap a:hover,
+.inner-wrap a:visited {
+    color:orange;
+    border-bottom: 1px solid orange;
+}
+
+
+.location-expanded-title a:hover,
+.location-expanded-title a:visited {
+    text-decoration: none;
+    color: #2c4d90;
+    border-bottom: none;
+}
+
+
+
+.hidden-text {
+    display: none;
+}
+
+
+/*   locations expanded responsive     */
+
+@media (max-width: 700px){
+    
+    .inner-wrap {
+        width: 100%;
+        margin-left: -28px;
+        background-color: white;
+    
+    }
+    
+    .location-expanded-photo, .location-description {
+        display:block;
+        width: 90%;
+        margin: 0 auto;
+    
+    }
+    
+    .location-description {
+        font-size: 1em;
+        padding-left: 0;
+        line-height: 1.8;
+        font-weight: 400;
+    }
+    
+    .location-expanded-title {
+        font-size: 1.5em;
+        line-height: 1.1;
+        letter-spacing: 3px;
+        margin: 0 auto;
+        margin-top: 40px;
+             
+        
+    }
+    
+    .location-expanded-photo {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .hidden-text {
+        font-size: 1em;
+        padding-left: 16px;
+        line-height: 1.8;
+        padding-right: 10px;
+        font-weight: 400;
+    }
+    
+    
+    .viceroys {
+        list-style: none;
+        font-size: 1.1em;
+        margin-top: -25px;
+        margin-left: 0px;
+        margin-right: -10px;
+
+    }
+
+}
+
+
+
+/*  its history content main   */
+
+
+
+.history-content .images {
+    display: inline-block;
+    
+}
+
+.firstimages {
+    height: 160px;
+    margin: 0 auto;
+    border: 1px solid gray;
+}
+
+
+.history-content {
+    width: 750px;
+    margin: 0 auto;
+    margin-top: -50px;
+}
+
+.history-content h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+    background: none; /* all these following 6 properties are for the line under the header */
+    overflow: hidden;
+    margin: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.17em;
+    border-bottom: 1px solid #AAA;
+    letter-spacing: 2px;
+    color: gray;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.history-content h4 {
+    font-size: 1.2em;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2;
+    color: gray;
+    margin-bottom: 0px;
+}
+
+br {
+    height: 5px;
+    
+}
+
+.history-content p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 2.2;
+    font-weight:300;
+    letter-spacing: 1px;
+    color: gray;
+    text-indent: 30px;
+    
+}
+
+
+.history-content ul{
+    list-style: none;   
+}
+
+
+.history-content li {
+    line-height: 1.9;
+    font-size: 1.2em;
+    font-weight:300;
+    color: gray;
+    font-weight: 400:
+}
+
+
+.history-content a:link {
+    text-decoration: none;
+    color: gray;
+}
+
+.history-content a:hover,
+.history-content a:active,
+.history-content a:visited {
+    color:orange; 
+    
+}
+
+.history-content h3 a:hover  {
+    color:gray; /* stops the hover color on a anchors */
+}
+
+
+
+/* its history responsive */
+    
+    
+@media (max-width: 700px){
+    
+    .history-content {
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 0px;
+    }
+    
+    .history-content h3 {
+        font-size: 1.3em;
+        margin-right: 120px;
+        margin-left: 10px;
+        text-align: center;
+    }
+    
+    .history-content li {
+        line-height: 1.7;
+        font-size: 1.1em;
+        font-weight:300;
+        color: gray;
+        font-weight: 400:
+    }
+    
+    .history-content p {
+        margin-right: 120px;
+        margin-left: 20px;
+        line-height: 1.7;
+        font-size: 1em;
+        text-indent: 20px;
+    }
+    
+    
+    .history-content h4 {
+        font-size: 1em;
+        letter-spacing: 2px;
+        text-indent: 70px;
+    }
+    
+}
+
+
+
+
+/*   timeline  */
+
+.timeline {
+    margin-top: -150px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+
+
+.timeline ul{
+    list-style: none;
+    padding-left: 4em;  /* to indent second line */
+    text-indent: -5em;  /* to indent second line */
+    
+    
+}
+
+
+.timeline li {
+    line-height: 1.5;
+    font-size: 1.2em;
+    font-weight:300;
+    color: gray;
+    padding-bottom: 3em;
+    letter-spacing: 1.5px;
+}
+
+.timeline li strong {
+    font-size: 1.2em;
+}
+
+
+/* timeline responsive */
+    
+    
+@media (max-width: 700px){
+    
+    .timeline {
+        margin-left: 20px;
+        margin-right: 0px;
+        margin-top: 30px;
+        
+    }
+    
+    .timeline ul{
+        list-style: none;
+        padding-left: 4em;  /* to indent second line */
+        text-indent: -4em;  /* to indent second line */
+    
+    
+    }
+    
+    .timeline li {
+        font-size: 1em;
+        padding-bottom: 1em;
+        line-height: 1.3;
+        letter-spacing: 1.3px;
+        
+    }
+
+    .timeline li strong {
+        font-size: 1.1em;
+    }
+
+}
+
+
+
+
+
+/*  about  */
+
+.about-content {
+    width: 750px;
+    margin: 0 auto;
+    margin-top: -50px;
+}
+
+.about-content h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+    background: none; /* all these following 6 properties are for the line under the header */
+    overflow: hidden;
+    margin: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.17em;
+    border-bottom: 1px solid #AAA;
+    letter-spacing: 2px;
+    color: gray;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.about-content h4 {
+    font-size: 1.2em;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2;
+    color: gray;
+    margin-bottom: 0px;
+}
+
+br {
+    height: 5px;
+    
+}
+
+.about-content p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 2.2;
+    font-weight:300;
+    letter-spacing: 1px;
+    color: gray;
+    text-indent: 30px;
+    
+}
+
+/*  about responsive */
+    
+    
+@media (max-width: 700px){
+    
+    .about-content {
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 0px;
+    }
+    
+    .about-content h3 {
+        font-size: 1.3em;
+        margin-right: 120px;
+        margin-left: 10px;
+        text-align: center;
+    }
+    
+    
+    .about-content p {
+        margin-right: 120px;
+        margin-left: 20px;
+        line-height: 1.7;
+        font-size: 1em;
+        text-indent: 20px;
+    }
+    
+    
+    .about-content h4 {
+        font-size: 1em;
+        letter-spacing: 2px;
+        text-indent: 70px;
+    }
+    
+}
+
+
+/*  contact  */
+
+.contact-content {
+    width: 750px;
+    margin: 0 auto;
+    margin-top: -50px;
+}
+
+.contact-content h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+    background: none; /* all these following 6 properties are for the line under the header */
+    overflow: hidden;
+    margin: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.17em;
+    border-bottom: 1px solid #AAA;
+    letter-spacing: 2px;
+    color: gray;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.contact-content h4 {
+    font-size: 1.2em;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2;
+    color: gray;
+    margin-bottom: 0px;
+}
+
+br {
+    height: 5px;
+    
+}
+
+.contact-content p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 2.2;
+    font-weight:300;
+    letter-spacing: 1px;
+    color: gray;
+    text-indent: 30px;
+    
+}
+
+/*  contact responsive */
+    
+    
+@media (max-width: 700px){
+    
+    .contact-content {
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 0px;
+    }
+    
+    .contact-content h3 {
+        font-size: 1.3em;
+        margin-right: 120px;
+        margin-left: 10px;
+        text-align: center;
+    }
+    
+    
+    .contact-content p {
+        margin-right: 120px;
+        margin-left: 20px;
+        line-height: 1.7;
+        font-size: 1em;
+        text-indent: 20px;
+    }
+    
+    
+    .contact-content h4 {
+        font-size: 1em;
+        letter-spacing: 2px;
+        text-indent: 70px;
+    }
+    
+}
+
+/*  contact responsive */
+
+@media (max-width: 700px){
+    
+    .contact-form {
+        margin-left: 60px;
+        margin-right: 60px; 
+    }
+    
+}
+
+
+/*  footer  */
+
+.site-footer {
+    height: 70px;
+    margin: 0 auto;
+    background-color: #3a5695;
+    color: white;
+    padding-top: 15px;
+    margin-bottom: -16px;
+    
+}
+
+
+.site-footer p {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 1em;
+    
+}
+
+
+/*   footer responsive     */
+
+@media (max-width: 700px) {
+    .site-footer {
+        height: 50px;
+        margin: 0 auto;
+    }
+    
+    .site-footer p {
+        text-align: center;
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+    
+}
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
